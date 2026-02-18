@@ -47,6 +47,7 @@ export default function BookingCard({ booking }: Props) {
 
 const styles = StyleSheet.create({
   card: {
+    flex: 1,
     borderRadius: 20,
     backgroundColor: AirbnbColors.white,
     overflow: 'hidden',
@@ -56,10 +57,12 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     elevation: 4,
   },
-  imageContainer: {},
+  imageContainer: {
+    flex: 1,
+  },
   image: {
     width: '100%',
-    height: 220,
+    flex: 1,
     borderRadius: 16,
   },
   badge: {

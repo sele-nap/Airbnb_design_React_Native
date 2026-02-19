@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     top: 69,
     bottom: 69,
     left: 31,
-    backgroundColor: '#F2F2F2',
+    backgroundColor: '#E9E9E9',
     zIndex: 1,
   },
   row: {

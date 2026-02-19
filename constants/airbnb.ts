@@ -14,7 +14,7 @@ export const AirbnbColors = {
 };
 
 export const AirbnbFonts = {
-  bold: 'Inter_700Bold',
+  bold: 'PlusJakartaSans_700Bold',
 
   xs: 10,
   sm: 12,

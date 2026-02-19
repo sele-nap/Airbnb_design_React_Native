@@ -4,7 +4,7 @@ import { useFonts } from 'expo-font';
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
-    Inter_700Bold: require('@/assets/fonts/Inter_700Bold.ttf'),
+    PlusJakartaSans_700Bold: require('@/assets/fonts/PlusJakartaSans_700Bold.ttf'),
   });
 
   if (!fontsLoaded) return null;

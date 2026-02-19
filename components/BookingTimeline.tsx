@@ -24,6 +24,7 @@ export default function BookingTimeline({ booking }: Props) {
 
   return (
     <View style={styles.wrapper}>
+      <View style={styles.connector} />
       {items.map((item, index) => (
         <View key={index} style={styles.row}>
           <View style={styles.leftCol}>
@@ -31,7 +32,6 @@ export default function BookingTimeline({ booking }: Props) {
             <View style={styles.dayCircle}>
               <Text style={styles.dayNumber}>{item.day.number}</Text>
             </View>
-            {index === 0 && <View style={styles.connector} />}
           </View>
           <View style={styles.card}>
             <View style={styles.iconBox}>
@@ -47,18 +47,27 @@ export default function BookingTimeline({ booking }: Props) {
 
 const styles = StyleSheet.create({
   wrapper: {
-    gap: 0,
+    gap: 8,
+    position: 'relative',
+  },
+  connector: {
+    position: 'absolute',
+    width: 1.5,
+    top: 69,
+    bottom: 69,
+    left: 21,
+    backgroundColor: '#D0D0D0',
+    zIndex: 1,
   },
   row: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     gap: 12,
-    marginBottom: 10,
   },
   leftCol: {
     width: 44,
     alignItems: 'center',
-    paddingTop: 6,
+    zIndex: 2,
   },
   dayLabel: {
     fontSize: AirbnbFonts.xs,
@@ -80,39 +89,32 @@ const styles = StyleSheet.create({
     color: AirbnbColors.textSecondary,
     includeFontPadding: false,
   },
-  connector: {
-    width: 1.5,
-    minHeight: 24,
-    backgroundColor: '#D0D0D0',
-    marginTop: 6,
-    marginBottom: 2,
-  },
   card: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: AirbnbColors.white,
     borderRadius: 16,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    gap: 14,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+    gap: 12,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.05,
-    shadowRadius: 12,
+    shadowOpacity: 0.04,
+    shadowRadius: 20,
     elevation: 2,
   },
   iconBox: {
-    width: 44,
-    height: 44,
+    width: 64,
+    height: 64,
     borderRadius: 12,
     backgroundColor: '#F2F2F2',
     alignItems: 'center',
     justifyContent: 'center',
   },
   icon: {
-    width: 32,
-    height: 32,
+    width: 58,
+    height: 58,
     borderRadius: 8,
   },
   description: {

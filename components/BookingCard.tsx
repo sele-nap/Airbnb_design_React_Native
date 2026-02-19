@@ -53,8 +53,8 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.06,
-    shadowRadius: 20,
+    shadowOpacity: 0.04,
+    shadowRadius: 30,
     elevation: 4,
   },
   imageContainer: {

@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     borderBottomColor: '#C8C8C8',
   },
   title: {
-    fontSize: AirbnbFonts.md,
+    fontSize: AirbnbFonts.xl,
     fontFamily: AirbnbFonts.bold,
     color: AirbnbColors.textPrimary,
   },

@@ -16,10 +16,10 @@ export const AirbnbColors = {
 };
 
 export const AirbnbFonts = {
-  regular: '400' as const,
-  medium: '500' as const,
-  semiBold: '600' as const,
-  bold: '700' as const,
+  regular: 'PlusJakartaSans_400Regular',
+  medium: 'PlusJakartaSans_500Medium',
+  semiBold: 'PlusJakartaSans_600SemiBold',
+  bold: 'PlusJakartaSans_700Bold',
 
   xs: 10,
   sm: 12,

@@ -12,7 +12,7 @@ export default function TripsHeader({ booking }: Props) {
       <View style={styles.row}>
         <Text style={styles.title}>Voyages</Text>
         <View style={styles.menuButton}>
-          <List size={20} color={AirbnbColors.textPrimary} strokeWidth={1.5} />
+          <List size={20} color={AirbnbColors.textPrimary} strokeWidth={2.5} />
         </View>
       </View>
       <Text style={styles.city}>{booking.city}</Text>
@@ -32,11 +32,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingBottom: 12,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#E0E0E0',
+    borderBottomColor: '#C8C8C8',
   },
   title: {
-    fontSize: AirbnbFonts.xl,
-    fontWeight: AirbnbFonts.bold,
+    fontSize: AirbnbFonts.md,
+    fontFamily: AirbnbFonts.bold,
     color: AirbnbColors.textPrimary,
   },
   menuButton: {
@@ -49,9 +49,9 @@ const styles = StyleSheet.create({
   },
   city: {
     fontSize: AirbnbFonts.md,
-    fontWeight: AirbnbFonts.semiBold,
+    fontFamily: AirbnbFonts.bold,
     color: AirbnbColors.textPrimary,
-    paddingTop: 12,
-    paddingBottom: 8,
+    paddingTop: 8,
+    paddingBottom: 4,
   },
 });

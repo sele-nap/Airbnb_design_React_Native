@@ -56,7 +56,7 @@ export default function BottomNavBar() {
                 <View style={styles.iconWrapper}>
                   {tab.icon(color)}
                 </View>
-                <Text style={[styles.label, { color }]}>{tab.label}</Text>
+                <Text style={[styles.label, { color, fontWeight: isActive ? 'bold' : 'normal' }]}>{tab.label}</Text>
               </View>
             );
           })}
@@ -83,22 +83,21 @@ const styles = StyleSheet.create({
   tab: {
     flex: 1,
     alignItems: 'center',
-    gap: 4,
+    gap: 2,
   },
   iconWrapper: {
-    width: 26,
-    height: 26,
+    width: 22,
+    height: 22,
     alignItems: 'center',
     justifyContent: 'center',
   },
   label: {
-    fontSize: AirbnbFonts.xs,
-    fontWeight: AirbnbFonts.medium,
+    fontSize: 9,
   },
   profileImage: {
-    width: 26,
-    height: 26,
-    borderRadius: 13,
+    width: 22,
+    height: 22,
+    borderRadius: 11,
     borderWidth: 1.5,
     borderColor: AirbnbColors.lightGray,
   },

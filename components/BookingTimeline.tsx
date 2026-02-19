@@ -49,13 +49,15 @@ const styles = StyleSheet.create({
   wrapper: {
     gap: 8,
     position: 'relative',
+    marginLeft: -16,
+    paddingLeft: 16,
   },
   connector: {
     position: 'absolute',
     width: 1.5,
     top: 69,
     bottom: 69,
-    left: 21,
+    left: 31,
     backgroundColor: '#D0D0D0',
     zIndex: 1,
   },
@@ -65,7 +67,7 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   leftCol: {
-    width: 44,
+    width: 30,
     alignItems: 'center',
     zIndex: 2,
   },

@@ -6,19 +6,14 @@ export const AirbnbColors = {
 
   white: '#FFFFFF',
   lightGray: '#DDDDDD',
-  subtleGray: '#F7F7F7',
 
   tabInactive: '#6A6A6A',
   tabActive: '#FF385C',
 
   background: '#FFFFFF',
-  border: '#EBEBEB',
 };
 
 export const AirbnbFonts = {
-  regular: 'PlusJakartaSans_400Regular',
-  medium: 'PlusJakartaSans_500Medium',
-  semiBold: 'PlusJakartaSans_600SemiBold',
   bold: 'PlusJakartaSans_700Bold',
 
   xs: 10,

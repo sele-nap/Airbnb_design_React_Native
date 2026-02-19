@@ -1,20 +1,20 @@
 export const AirbnbColors = {
-  primary: '#FF385C',
+  primary: '#E31C5D',
 
-  textPrimary: '#222222',
-  textSecondary: '#717171',
+  textPrimary: '#000000',
+  textSecondary: '#6A6A6A',
 
   white: '#FFFFFF',
   lightGray: '#DDDDDD',
 
   tabInactive: '#6A6A6A',
-  tabActive: '#FF385C',
+  tabActive: '#E31C5D',
 
   background: '#FFFFFF',
 };
 
 export const AirbnbFonts = {
-  bold: 'PlusJakartaSans_700Bold',
+  bold: 'Inter_700Bold',
 
   xs: 10,
   sm: 12,

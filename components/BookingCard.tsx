@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   badgeText: {
     fontSize: AirbnbFonts.sm,
-    fontWeight: '600',
+    fontFamily: AirbnbFonts.medium,
     color: AirbnbColors.textPrimary,
   },
   info: {
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: AirbnbFonts.sm,
-    fontWeight: '500',
+    fontFamily: AirbnbFonts.book,
     color: AirbnbColors.textSecondary,
   },
   hostRow: {

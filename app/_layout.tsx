@@ -4,7 +4,9 @@ import { useFonts } from 'expo-font';
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
-    PlusJakartaSans_700Bold: require('@/assets/fonts/PlusJakartaSans_700Bold.ttf'),
+    'AirbnbCereal-Book': require('@/assets/fonts/AirbnbCereal_W_Bk.otf'),
+    'AirbnbCereal-Medium': require('@/assets/fonts/AirbnbCereal_W_Md.otf'),
+    'AirbnbCereal-Bold': require('@/assets/fonts/AirbnbCereal_W_Bd.otf'),
   });
 
   if (!fontsLoaded) return null;

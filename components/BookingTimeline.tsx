@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   },
   dayNumber: {
     fontSize: AirbnbFonts.base,
-    fontWeight: 'bold',
+    fontFamily: AirbnbFonts.bold,
     color: AirbnbColors.textSecondary,
     includeFontPadding: false,
   },
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   description: {
     flex: 1,
     fontSize: AirbnbFonts.base,
-    fontWeight: 'bold',
+    fontFamily: AirbnbFonts.medium,
     color: AirbnbColors.textPrimary,
   },
 });

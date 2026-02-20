@@ -56,7 +56,7 @@ export default function BottomNavBar() {
                 <View style={styles.iconWrapper}>
                   {tab.icon(color)}
                 </View>
-                <Text style={[styles.label, { color, fontWeight: isActive ? 'bold' : 'normal' }]}>{tab.label}</Text>
+                <Text style={[styles.label, { color, fontFamily: isActive ? AirbnbFonts.bold : AirbnbFonts.book }]}>{tab.label}</Text>
               </View>
             );
           })}

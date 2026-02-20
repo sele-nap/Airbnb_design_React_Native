@@ -20,25 +20,27 @@ export default function BookingCard({ booking }: Props) {
   const dateRange = `${formatDate(booking.bookingStart)} – ${formatDate(booking.bookingEnd)}`;
 
   return (
-    <View style={styles.card}>
-      <View style={styles.imageContainer}>
-        <Image source={{ uri: booking.bookingImage }} style={styles.image} />
-        <View style={styles.badge}>
-          <Text style={styles.badgeText}>
-            {monthsAway > 0 ? `Dans ${monthsAway} mois` : 'Bientôt'}
-          </Text>
+    <View style={styles.shadow}>
+      <View style={styles.card}>
+        <View style={styles.imageContainer}>
+          <Image source={{ uri: booking.bookingImage }} style={styles.image} />
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>
+              {monthsAway > 0 ? `Dans ${monthsAway} mois` : 'Bientôt'}
+            </Text>
+          </View>
         </View>
-      </View>
 
-      <View style={styles.info}>
-        <Text style={styles.title} numberOfLines={1}>{booking.title}</Text>
-        <Text style={styles.subtitle}>{dateRange} · Hôte : {booking.hostName}</Text>
+        <View style={styles.info}>
+          <Text style={styles.title} numberOfLines={1}>{booking.title}</Text>
+          <Text style={styles.subtitle}>{dateRange} · Hôte : {booking.hostName}</Text>
 
-        <View style={styles.hostRow}>
-          <Image source={{ uri: booking.guestImage }} style={styles.avatar} />
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Afficher{'\n'}l'annonce</Text>
-          </TouchableOpacity>
+          <View style={styles.hostRow}>
+            <Image source={{ uri: booking.guestImage }} style={styles.avatar} />
+            <TouchableOpacity style={styles.button}>
+              <Text style={styles.buttonText}>Afficher{'\n'}l'annonce</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </View>
@@ -46,16 +48,16 @@ export default function BookingCard({ booking }: Props) {
 }
 
 const styles = StyleSheet.create({
-  card: {
+  shadow: {
     flex: 1,
     borderRadius: 20,
     backgroundColor: AirbnbColors.white,
+    boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.13)',
+  },
+  card: {
+    flex: 1,
+    borderRadius: 20,
     overflow: 'hidden',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.12,
-    shadowRadius: 28,
-    elevation: 4,
   },
   imageContainer: {
     flex: 1,

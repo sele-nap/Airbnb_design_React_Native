@@ -1,6 +1,4 @@
 export const AirbnbColors = {
-  primary: '#E31C5D',
-
   textPrimary: '#000000',
   textSecondary: '#6A6A6A',
 
